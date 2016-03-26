@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nsu.meidaproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".VideoActivity"
+            android:label="@string/title_activity_video" >
+           <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> 
+        </activity>
+        <activity
+            android:name=".SurfaceViewActivity"
+            android:label="@string/title_activity_surface_view" >
+        </activity>
+        <activity
+            android:name=".AudioActivity"
+            android:label="@string/title_activity_audio" >
+        </activity>
+        <activity
+            android:name=".VideoViewActivity"
+            android:label="@string/title_activity_video_view" >
+            
+        </activity>
+    </application>
+
+</manifest>
